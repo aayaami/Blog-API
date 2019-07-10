@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const commentSchema = new mongoose.Schema({
     text: {
         type: String,
-        require: true
+        required: true
     },
     timestamp: {
 		type: Date,
