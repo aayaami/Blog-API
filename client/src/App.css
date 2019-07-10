@@ -31,3 +31,52 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 19vh;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+hr {
+  width: 99%;
+}
+
+a {
+  color: white;
+}
+
+.post {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  margin: 10px auto;
+  color: white;
+  background-color: rgb(73, 79, 82);
+}
+
+.postTitle {
+  width: 95%;
+  height: 20%;
+  /* background-color: rgb(56, 59, 61); */
+}
+
+.postText {
+  width: 95%;
+  height: 70%;
+  /* background-color: rgb(56, 59, 61); */
+}

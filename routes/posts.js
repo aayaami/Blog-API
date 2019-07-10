@@ -24,6 +24,14 @@ router.post('/', async (req, res) => {
     }
 })
 
+router.get('/:id', getPost, async (req, res) => {
+    try {
+        res.json(res.post)
+    } catch (err) {
+        res.status(500).json({ message: err.message })
+    }
+})
+
 router.put('/:id', getPost, async (req, res) => {
     res.post.title = req.body.title
     res.post.text = req.body.text
